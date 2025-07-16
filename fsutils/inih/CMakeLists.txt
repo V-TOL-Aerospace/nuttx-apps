@@ -76,6 +76,8 @@ if(CONFIG_FSUTILS_INIH)
 
   set(INCDIR ${INIH_DIR})
 
+  file(COPY ${INIH_DIR}/ini.h DESTINATION ${NUTTX_APPS_DIR}/include/fsutils)
+
   # ############################################################################
   # Library Configuration
   # ############################################################################
